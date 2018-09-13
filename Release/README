@@ -1,1 +1,16 @@
+Current DLL contents:
 
+WheyCoolTools.Convert.ConvertMeasurement v0.1
+
+Implemented Measurement Conversions:
+Kilometers <--> Miles
+MPH <--> Knots
+Miles<--> Nautical Miles
+Inches <--> Centimeters
+Fahrenheit <--> Celsius <--> Kelvin
+Liters <--> US Quarts
+Liters <--> >US Gallons
+Pounds <--> Grams
+Ounces <--> Grams
+Stones <--> Pounds
+US Tons <--> Metric Tons
