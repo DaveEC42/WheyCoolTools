@@ -1,4 +1,5 @@
-﻿using System;
+﻿// ConvertMeasurement, v0.1
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -47,6 +48,7 @@ namespace WheyCoolTools.Convert
         public static double USTonsToMetricTons(double usTons) => 0.907185f * usTons;
         public static double MetricTonsToUSTons(double metricTons) => 1.1023113109244f * metricTons;
 
-    }
 
+    }
+    
 }
