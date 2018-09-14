@@ -20,3 +20,7 @@ Kilometers <--> Meters
 Kilometers Per Hours <--> Meters Per Second
 MPH <--> Feet Per Second
 Degrees <--> Radians
+
+ WheyCoolTools.Validation.OperationResult v1.0
+ Message wrapper class for handling operation validation.
+ Contains a bool for Success or Fail and a List<string> for passing messages.
