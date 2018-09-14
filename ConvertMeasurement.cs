@@ -1,8 +1,11 @@
-﻿
+﻿//Author: Dave Bochichio
+//https://davebochichio.com
+//https://github.com/DaveEC42
+//
 namespace WheyCoolTools.Convert
 {
     /// <summary>
-    /// ConvertMeasurement, v0.2
+    /// ConvertMeasurement, v0.3
     /// Provides methods for converting between units of measurement.
     /// NOTE: Rounding of some conversions may be necessary. The class
     /// is generally accurate within 6 decimal places.
@@ -88,27 +91,39 @@ namespace WheyCoolTools.Convert
         public static decimal FeetPerSecondToMilesPerHour(decimal feetPerSecond) =>
             feetPerSecond / 1.46666666666666666666666666666666666666666666666667m;
 
-        public static decimal DegreesToRadians(decimal degrees) => degrees * 0.01745329252m;
-        public static decimal RadiansToDegrees(decimal radians) => radians * 57.295779513m;
-        /* 
-        * IMPLEMENTED BUT NOT YET COMMITED
-        *  
-        * /
+        public static decimal DegreesToRadians(decimal degrees) => 0.01745329252m * degrees;
+        public static decimal RadiansToDegrees(decimal radians) => 57.295779513m * radians;
 
-       /*
-          NOT YET IMPLEMENTED
+        public static decimal DaysToHours(decimal days) => days * 24m;
+        public static decimal DaysToMinutes(decimal days) => days * 24m * 60m;
+        public static decimal DaysToSeconds(decimal days) => days * 24m * 60m * 60m;
 
-         
-          
-           Days <--> Hours <--> Minutes <--> Seconds
-           Watts <--> BTUs/hr
-           Watts <--> Kilowatts
-           Horsepower <--> Watts
-           Kilocalorie <--> Joule
-           Atmosphere <--> PSI
-           More To Come...
-        */
+        public static decimal HoursToMinutes(decimal hours) => hours * 60m;
+        public static decimal HoursToSeconds(decimal hours) => hours * 60m * 60m;
 
+        public static decimal MinutesToSeconds(decimal minutes) => minutes * 60m;
+
+        public static decimal SecondsToMinutes(decimal seconds) => seconds / 60m;
+        public static decimal SecondsToHours(decimal seconds) => seconds / (60m * 60m);
+        public static decimal SecondsToDays(decimal seconds) => seconds / (60m * 60m * 24m);
+
+        public static decimal MinutesToHours(decimal minutes) => minutes / 60m;
+        public static decimal MinutesToDays(decimal minutes) => minutes / (60m * 24m);
+
+        public static decimal HoursToDays(decimal hours) => hours / 24m;
+
+        public static decimal WattsToKilowatts(decimal watts) => watts / 1000m;
+        public static decimal KilowattsToWatts(decimal kilowatts) => 1000m * kilowatts;
+
+        public static decimal HorsepowerToWatts(decimal horsepower) => 745.6998715823m * horsepower;
+        public static decimal WattsToHorsepower(decimal watts) => watts / 745.6998715823m;
+        
+        public static decimal KilocaloriesToJoules(decimal kilocalories) => 4184m * kilocalories ;
+        public static decimal JoulesToKilocalories(decimal joules) => joules / 4184m;
+
+        public static decimal AtmospheresToPSI(decimal atmospheres) => 14.695948775872306m * atmospheres;
+        public static decimal PSIToAtmospheres(decimal psi) => psi / 14.695948775872306m;
+        
     }
 
 }

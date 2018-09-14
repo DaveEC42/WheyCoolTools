@@ -1,8 +1,11 @@
 Current DLL contents:
 
-WheyCoolTools.Convert.ConvertMeasurement v0.2
+WheyCoolTools.Convert.ConvertMeasurement v0.3
+NOTE: Not every conversion has been tested for precision. It is strongly advised that you use a rounding 
+method, such as Math.Round to ensure precision.
 
 Implemented Measurement Conversions:
+
 Kilometers <--> Miles
 MPH <--> Knots
 Miles<--> Nautical Miles
@@ -20,9 +23,14 @@ Kilometers <--> Meters
 Kilometers Per Hours <--> Meters Per Second
 MPH <--> Feet Per Second
 Degrees <--> Radians
+Days <--> Hours <--> Minutes <--> Seconds
+Watts <--> Kilowatts
+Watts <--> Horsepower
+Kilocalories <--> Joules
+Atmospheres <--> PSI
 
 ---------------------------
 WheyCoolTools.Validation.OperationResult v1.0
 
 Message wrapper class for handling operation validation.
-Contains a bool for Success or Fail and a List<string> for passing messages.
+Contains a bool for Success/Fail and a List<string> for passing messages.

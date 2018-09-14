@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WheyCoolTools", "WheyCoolTo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WheyCoolToolsTest", "..\..\WheyCoolToolsTest\WheyCoolToolsTest.csproj", "{226E9C49-8565-49D4-A122-E03F4FA20F36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "..\Testing\Testing.csproj", "{99E2932A-0C55-40AA-8EC2-9B6B64C43CDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{226E9C49-8565-49D4-A122-E03F4FA20F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{226E9C49-8565-49D4-A122-E03F4FA20F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{226E9C49-8565-49D4-A122-E03F4FA20F36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99E2932A-0C55-40AA-8EC2-9B6B64C43CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E2932A-0C55-40AA-8EC2-9B6B64C43CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E2932A-0C55-40AA-8EC2-9B6B64C43CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99E2932A-0C55-40AA-8EC2-9B6B64C43CDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,11 @@
-﻿using System.Collections.Generic;
+﻿//https://davebochichio.com
+//https://github.com/DaveEC42
+//
+//Credit: Deborah Kurata for providing this class via Pluralsight. 
+//    https://blogs.msmvps.com/deborahk/about-me/
+//
+//
+using System.Collections.Generic;
 
 namespace WheyCoolTools.Validation
 {
@@ -19,4 +26,8 @@ namespace WheyCoolTools.Validation
         }
 
     }
+
+
 }
+
+
