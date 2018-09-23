@@ -2,127 +2,127 @@
 //https://davebochichio.com
 //https://github.com/DaveEC42
 //
-namespace WheyCoolTools.Convert
+namespace WheyCoolStudios.Tools.Convert
 {
     /// <summary>
     /// ConvertMeasurement, v0.3
     /// Provides methods for converting between units of measurement.
     /// NOTE: Rounding of some conversions may be necessary. The class
-    /// is generally accurate within 6 decimal places.
+    /// is generally accurate within 6 double places.
     /// </summary>
     /// 
     // TODO
     // Create a wrapper method that allows for greater precision and/or rounding.
     // The method could check to see how many significant digits on the left
-    // side of the decimal point exist, and round accordingly. Allow a bool
+    // side of the double point exist, and round accordingly. Allow a bool
     // to override this feature.
     //
     // NOTE: Many methods have not been tested yet.
     public static class ConvertMeasurement
     {
-        public static decimal KilometersToMiles(decimal kilometers) => 0.62137m * kilometers;
-        public static decimal MilesToKilometers(decimal miles) => 1.60934m * miles;
+        public static double KilometersToMiles(double kilometers) => 0.62137 * kilometers;
+        public static double MilesToKilometers(double miles) => 1.60934 * miles;
 
-        public static decimal MilesPerHourToKnots(decimal milesPerHour) => 0.868976m * milesPerHour;
-        public static decimal KnotsToMilesPerHour(decimal knots) => 1.15078m * knots;
+        public static double MilesPerHourToKnots(double milesPerHour) => 0.868976 * milesPerHour;
+        public static double KnotsToMilesPerHour(double knots) => 1.15078 * knots;
 
-        public static decimal MilesToNauticalMiles(decimal miles) => 0.86976m * miles;
-        public static decimal NauticalMilesToMiles(decimal nauticalMiles) => 1.15078m * nauticalMiles;
+        public static double MilesToNauticalMiles(double miles) => 0.86976 * miles;
+        public static double NauticalMilesToMiles(double nauticalMiles) => 1.15078 * nauticalMiles;
 
-        public static decimal InchesToCentimeters(decimal inches) => 2.54m * inches;
-        public static decimal CentimetersToInches(decimal centimeters) => 0.393701m * centimeters;
+        public static double InchesToCentimeters(double inches) => 2.54 * inches;
+        public static double CentimetersToInches(double centimeters) => 0.393701 * centimeters;
 
-        public static decimal FahrenheitToCelsius(decimal fahrenheit) => ((fahrenheit - 32m) * (5m / 9m));
-        public static decimal CelsiusToFahrenheit(decimal celsius) => (celsius * (9m / 5m) + 32m);
+        public static double FahrenheitToCelsius(double fahrenheit) => ((fahrenheit - 32) * (5 / 9));
+        public static double CelsiusToFahrenheit(double celsius) => (celsius * (9 / 5) + 32);
 
-        public static decimal CelsiusToKelvin(decimal celsius) => celsius + 273.15m;
-        public static decimal KelvinToCelsius(decimal kelvin) => kelvin - 273.15m;
+        public static double CelsiusToKelvin(double celsius) => celsius + 273.15;
+        public static double KelvinToCelsius(double kelvin) => kelvin - 273.15;
 
-        public static decimal FahrenheitToKelvin(decimal fahrenheit) => ((5m / 9m) * (fahrenheit - 32m) + 273m);
-        public static decimal KelvinToFahrenheit(decimal kelvin) => ((9m / 5m) * (kelvin - 273m) + 32m);
+        public static double FahrenheitToKelvin(double fahrenheit) => ((5 / 9) * (fahrenheit - 32) + 273);
+        public static double KelvinToFahrenheit(double kelvin) => ((9 / 5) * (kelvin - 273) + 32);
 
-        public static decimal LitersToUSQuarts(decimal liters) => 1.056710m * liters;
-        public static decimal USQuartsToLiters(decimal quarts) => 0.946353m * quarts;
+        public static double LitersToUSQuarts(double liters) => 1.056710 * liters;
+        public static double USQuartsToLiters(double quarts) => 0.946353 * quarts;
 
-        public static decimal USGallonsToLiters(decimal usGallons) => 3.78541m * usGallons;
-        public static decimal LitersToUSGallons(decimal liters) => 0.264172m * liters;
+        public static double USGallonsToLiters(double usGallons) => 3.78541 * usGallons;
+        public static double LitersToUSGallons(double liters) => 0.264172 * liters;
 
-        public static decimal PoundsToGrams(decimal pounds) => 453.59237m * pounds;
-        public static decimal GramsToPounds(decimal grams) => 0.002204622621848775m * grams;
+        public static double PoundsToGrams(double pounds) => 453.59237 * pounds;
+        public static double GramsToPounds(double grams) => 0.002204622621848775 * grams;
 
-        public static decimal OuncesToGrams(decimal ounces) => 28.349523125m * ounces;
-        public static decimal GramsToOunces(decimal grams) => 0.0352739619495799m * grams;
+        public static double OuncesToGrams(double ounces) => 28.349523125 * ounces;
+        public static double GramsToOunces(double grams) => 0.0352739619495799 * grams;
 
-        public static decimal StonesToPounds(decimal stones) => 14m * stones;
-        public static decimal PoundsToStones(decimal pounds) => pounds / 14m;
+        public static double StonesToPounds(double stones) => 14 * stones;
+        public static double PoundsToStones(double pounds) => pounds / 14;
 
-        public static decimal USTonsToMetricTons(decimal usTons) => 0.907185m * usTons;
-        public static decimal MetricTonsToUSTons(decimal metricTons) => 1.1023113109244m * metricTons;
+        public static double USTonsToMetricTons(double usTons) => 0.907185 * usTons;
+        public static double MetricTonsToUSTons(double metricTons) => 1.1023113109244 * metricTons;
 
-        public static decimal MilesToFeet(decimal miles) => 5280m * miles;
-        public static decimal MilesToInches(decimal miles) => 63360m * miles;
-        public static decimal MilesToYards(decimal miles) => 1760m * miles;
-        public static decimal FeetToMiles(decimal feet) => feet / 5280m; 
-        public static decimal InchesToMiles(decimal inches) => (FeetToMiles(inches)) / 12m;
+        public static double MilesToFeet(double miles) => 5280 * miles;
+        public static double MilesToInches(double miles) => 63360 * miles;
+        public static double MilesToYards(double miles) => 1760 * miles;
+        public static double FeetToMiles(double feet) => feet / 5280; 
+        public static double InchesToMiles(double inches) => (FeetToMiles(inches)) / 12;
 
-        public static decimal YardsToMiles(decimal yards) => 0.00056818181818181818m * yards;
-        public static decimal YardsToFeet(decimal yards) => 3m * yards;
-        public static decimal YardsToInches(decimal yards) => 36m * yards;
-        public static decimal FeetToYards(decimal feet) =>  feet / 3m;
-        public static decimal InchesToYards(decimal inches) => inches / 36m;
+        public static double YardsToMiles(double yards) => yards / 1760;
+        public static double YardsToFeet(double yards) => 3 * yards;
+        public static double YardsToInches(double yards) => 36 * yards;
+        public static double FeetToYards(double feet) =>  feet / 3;
+        public static double InchesToYards(double inches) => inches / 36;
 
-        public static decimal FeetToInches(decimal feet) => 12m * feet;
-        public static decimal InchesToFeet(decimal inches) => inches / 12m;
-        public static decimal MilesPerHoursToKilometersPerHour(decimal milesPerHour) => 
-            1.609344m * milesPerHour;
-        public static decimal KilometerPerHourToMilesPerHour(decimal kilometersPerHour) =>
-            kilometersPerHour / 1.609344m;
+        public static double FeetToInches(double feet) => 12 * feet;
+        public static double InchesToFeet(double inches) => inches / 12;
+        public static double MilesPerHoursToKilometersPerHour(double milesPerHour) => 
+            1.609344 * milesPerHour;
+        public static double KilometerPerHourToMilesPerHour(double kilometersPerHour) =>
+            kilometersPerHour / 1.609344;
 
-        public static decimal KilometerToMeters(decimal kilometers) => 1000m * kilometers;
-        public static decimal MetersToKilometers(decimal meters) => meters / 1000m;
-        public static decimal KilometersPerSecondToMetersPerSecond(decimal kilometersPerSecond) =>
-            kilometersPerSecond / 3.6m;
-        public static decimal MetersPerSecondToKilometersPerHour(decimal metersPerSecond) =>
-            metersPerSecond * 3.6m;
+        public static double KilometerToMeters(double kilometers) => 1000 * kilometers;
+        public static double MetersToKilometers(double meters) => meters / 1000;
+        public static double KilometersPerSecondToMetersPerSecond(double kilometersPerSecond) =>
+            kilometersPerSecond / 3.6;
+        public static double MetersPerSecondToKilometersPerHour(double metersPerSecond) =>
+            metersPerSecond * 3.6;
 
-        public static decimal MilesPerHourToFeetPerSecond(decimal milesPerHour) =>
-            1.46666666666666666666666666666666666666666666666667m * milesPerHour;
+        public static double MilesPerHourToFeetPerSecond(double milesPerHour) =>
+            1.46666666666666666666666666666666666666666666666667 * milesPerHour;
 
-        public static decimal FeetPerSecondToMilesPerHour(decimal feetPerSecond) =>
-            feetPerSecond / 1.46666666666666666666666666666666666666666666666667m;
+        public static double FeetPerSecondToMilesPerHour(double feetPerSecond) =>
+            feetPerSecond / 1.46666666666666666666666666666666666666666666666667;
 
-        public static decimal DegreesToRadians(decimal degrees) => 0.01745329252m * degrees;
-        public static decimal RadiansToDegrees(decimal radians) => 57.295779513m * radians;
+        public static double DegreesToRadians(double degrees) => 0.01745329252 * degrees;
+        public static double RadiansToDegrees(double radians) => 57.295779513 * radians;
 
-        public static decimal DaysToHours(decimal days) => days * 24m;
-        public static decimal DaysToMinutes(decimal days) => days * 24m * 60m;
-        public static decimal DaysToSeconds(decimal days) => days * 24m * 60m * 60m;
+        public static double DaysToHours(double days) => days * 24;
+        public static double DaysToMinutes(double days) => days * 24 * 60;
+        public static double DaysToSeconds(double days) => days * 24 * 60 * 60;
 
-        public static decimal HoursToMinutes(decimal hours) => hours * 60m;
-        public static decimal HoursToSeconds(decimal hours) => hours * 60m * 60m;
+        public static double HoursToMinutes(double hours) => hours * 60;
+        public static double HoursToSeconds(double hours) => hours * 60 * 60;
 
-        public static decimal MinutesToSeconds(decimal minutes) => minutes * 60m;
+        public static double MinutesToSeconds(double minutes) => minutes * 60;
 
-        public static decimal SecondsToMinutes(decimal seconds) => seconds / 60m;
-        public static decimal SecondsToHours(decimal seconds) => seconds / (60m * 60m);
-        public static decimal SecondsToDays(decimal seconds) => seconds / (60m * 60m * 24m);
+        public static double SecondsToMinutes(double seconds) => seconds / 60;
+        public static double SecondsToHours(double seconds) => seconds / (60 * 60);
+        public static double SecondsToDays(double seconds) => seconds / (60 * 60 * 24);
 
-        public static decimal MinutesToHours(decimal minutes) => minutes / 60m;
-        public static decimal MinutesToDays(decimal minutes) => minutes / (60m * 24m);
+        public static double MinutesToHours(double minutes) => minutes / 60;
+        public static double MinutesToDays(double minutes) => minutes / (60 * 24);
 
-        public static decimal HoursToDays(decimal hours) => hours / 24m;
+        public static double HoursToDays(double hours) => hours / 24;
 
-        public static decimal WattsToKilowatts(decimal watts) => watts / 1000m;
-        public static decimal KilowattsToWatts(decimal kilowatts) => 1000m * kilowatts;
+        public static double WattsToKilowatts(double watts) => watts / 1000;
+        public static double KilowattsToWatts(double kilowatts) => 1000 * kilowatts;
 
-        public static decimal HorsepowerToWatts(decimal horsepower) => 745.6998715823m * horsepower;
-        public static decimal WattsToHorsepower(decimal watts) => watts / 745.6998715823m;
+        public static double HorsepowerToWatts(double horsepower) => 745.6998715823 * horsepower;
+        public static double WattsToHorsepower(double watts) => watts / 745.6998715823;
         
-        public static decimal KilocaloriesToJoules(decimal kilocalories) => 4184m * kilocalories ;
-        public static decimal JoulesToKilocalories(decimal joules) => joules / 4184m;
+        public static double KilocaloriesToJoules(double kilocalories) => 4184 * kilocalories;
+        public static double JoulesToKilocalories(double joules) => joules / 4184;
 
-        public static decimal AtmospheresToPSI(decimal atmospheres) => 14.695948775872306m * atmospheres;
-        public static decimal PSIToAtmospheres(decimal psi) => psi / 14.695948775872306m;
+        public static double AtmospheresToPSI(double atmospheres) => 14.695948775872306 * atmospheres;
+        public static double PSIToAtmospheres(double psi) => psi / 14.695948775872306;
         
     }
 

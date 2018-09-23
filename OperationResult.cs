@@ -7,7 +7,7 @@
 //
 using System.Collections.Generic;
 
-namespace WheyCoolTools.Validation
+namespace WheyCoolStudios.Tools.Validation
 {
     /// <summary>
     /// This class functions as means to provide a success/fail on any given operation, along
